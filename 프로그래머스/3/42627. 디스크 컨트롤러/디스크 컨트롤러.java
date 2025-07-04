@@ -15,7 +15,7 @@ class Solution {
                 pq.add(jobs[jobIndex]);
                 jobIndex++;
             }
-            if (!pq.isEmpty()) {
+            if(!pq.isEmpty()){
                 int[] job = pq.remove();
                 currentTime += job[1];
                 totalResponseTime += currentTime - job[0];
