@@ -8,9 +8,9 @@ class Solution {
         if(idx == numbers.length) {
             return (sum == target) ? 1 : 0;
         }
-            int count = 0;
-    count += backtrack(numbers, target, sum+numbers[idx], idx+1);
-    count += backtrack(numbers, target, sum-numbers[idx], idx+1);
-    return count;
+        int count = 0;
+        count += backtrack(numbers, target, sum+numbers[idx], idx+1);
+        count += backtrack(numbers, target, sum-numbers[idx], idx+1);
+        return count;
     }
 }
