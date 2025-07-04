@@ -4,6 +4,7 @@ class Solution {
     public int solution(int[] numbers, int target) {
         return backtrack(numbers, target, 0, 0);
     }
+    
     int backtrack(int[] numbers, int target, int sum, int idx) {
         if(idx == numbers.length) {
             return (sum == target) ? 1 : 0;
